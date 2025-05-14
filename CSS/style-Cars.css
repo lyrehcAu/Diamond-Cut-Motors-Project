@@ -1,0 +1,287 @@
+@font-face {
+    src: url('../Assets/Fonts/Aldrich-Regular.ttf');
+    font-family: 'Aldrich';    
+}
+
+@font-face {
+    src: url('../Assets/Fonts/Jaini-Regular.ttf');
+    font-family: 'Jaini';
+}
+
+@font-face {
+    src: url('../Assets/Fonts/Ubuntu-Regular.ttf');
+    font-family: 'Ubuntu';
+}
+
+@font-face {
+    src: url('../Assets/Fonts/UbuntuMono-Regular.ttf');
+    font-family: 'Ubuntu Mono';
+}
+
+body{
+    background-color: #222831;
+    margin: 0;
+}
+
+.header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.upper-logo{
+    display: none;
+}
+
+.navbar{
+    background-color: #76ABAE;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+}
+
+.logo{
+    color: #EEEEEE;
+    font-family: Aldrich;
+    font-size: 1.8vw;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.logo a, h1{
+    color: #EEEEEE;
+    text-decoration: none;
+}
+
+.logo img{
+    width: 55px;
+    height: 55px;
+    margin-right: 10px;
+}
+
+.menu{
+    display: flex;
+    gap: 6vw;
+    margin: 10px;
+}
+
+.menu a{
+    font-family: Ubuntu;
+    font-size: 20px;
+    color: #EEEEEE;
+    text-decoration: none;
+}
+
+.current{
+    color: #003C43 !important;
+    font-weight: bolder;
+}
+
+.menu a:hover{
+    text-shadow: 3px 3px 5px #003C43;
+}
+
+.carBox{
+    background-color: #31363F;
+    color: #EEEEEE;
+    font-family: Ubuntu;
+    text-align: center;
+    width: 96%;
+    height: 1049px;
+    margin: 34px auto 34px auto;
+    border-radius: 25px;
+}
+
+.carBox h1{
+    border-bottom: 3px solid#76ABAE;
+    padding: 10px;
+}
+
+.card{
+    background-color: #222831;
+    width: 96%;
+    height: 206px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    font-family: Ubuntu Mono;
+    color: #EEEEEE;
+    margin-bottom: 22px;
+}
+
+.card:hover{
+    box-shadow: 10px 10px 15px #76ABAE;
+}
+
+.card img{
+    width: 35%;
+    height: 206px;
+    border-radius: 25px 0px 0px 25px;
+    object-fit: cover;
+}
+
+.carsInfo{
+    text-align: left;
+    width: 100%;
+}
+
+.pricing{
+    font-size: smaller;
+}
+
+.carsInfo h2, p{
+    margin: 15px;
+}
+
+.pricing{
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    border-top: 3px solid#76ABAE;
+    width: 100%;
+}
+
+.carBox a{
+    font-size: 28px;
+    text-decoration: none;
+    color: #EEEEEE;
+}
+
+@keyframes slide{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+.partnerTitle{
+    font-family: Ubuntu;
+    border-bottom: 3px solid #76ABAE;
+    text-align: center;
+    margin: auto;
+    height: 47px;
+    width: 96%;
+}
+
+.logos{
+    overflow: hidden;
+    padding: 25px 0;
+    white-space: nowrap;
+}
+
+.logos:hover .logoSlide{
+    animation-play-state: paused;
+}
+
+.logoSlide{
+    animation: 30s slide infinite linear;
+    display: inline-block;
+}
+
+.logoSlide img{
+    height: 170px;
+    width: 170px;
+    object-fit: contain;
+    margin: 0px 20px;
+}
+
+.footer{
+    background-color: #76ABAE;
+    width: 100%;
+    height: 180px;
+    text-align: center;
+    color: #EEEEEE;
+}
+
+.contact{
+    margin: 20px;
+}
+
+.contact p{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    margin: 15px;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+.all-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.all-info p{
+    font-family: 'Ubuntu Mono', monospace;
+    text-decoration: none;
+    font-weight: lighter;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+}
+
+.info img{
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .logo img, .logo h1{
+        display: none;
+    }
+    .upper-logo{
+        display: flex;
+        background-color: #222831;
+        height: 70px;
+        font-family: Aldrich;
+        font-size: 4vw;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .upper-logo a, .upper-logo h1{
+        color: #EEEEEE;
+        text-decoration: none;
+    }
+    .upper-logo img{
+        width: 50px;
+        height: 50px;
+    }
+    .menu{
+        position: absolute;
+        left: 10%;
+    }
+    .menu a{
+        font-size: 3vw;
+    }
+    .navbar{
+        height: 9vw;
+    }
+    .carBox, .partnerTitle{
+        width: 96%;
+    }
+    .card{
+        width: 96%;
+    }
+    .all-info{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer{
+        height: 320px;
+    }
+}

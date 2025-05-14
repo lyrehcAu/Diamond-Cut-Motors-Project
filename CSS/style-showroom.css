@@ -1,0 +1,366 @@
+@font-face {
+    src: url('../Assets/Fonts/Aldrich-Regular.ttf');
+    font-family: 'Aldrich';    
+}
+
+@font-face {
+    src: url('../Assets/Fonts/Jaini-Regular.ttf');
+    font-family: 'Jaini';
+}
+
+@font-face {
+    src: url('../Assets/Fonts/Ubuntu-Regular.ttf');
+    font-family: 'Ubuntu';
+}
+
+@font-face {
+    src: url('../Assets/Fonts/UbuntuMono-Regular.ttf');
+    font-family: 'Ubuntu Mono';
+}
+
+body{
+    background-color: #222831;
+    margin: 0;
+}
+
+.header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.upper-logo{
+    display: none;
+}
+
+.navbar{
+    background-color: #76ABAE;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+}
+
+.logo{
+    color: #EEEEEE;
+    font-family: Aldrich;
+    font-size: 1.8vw;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.logo a, h1{
+    color: #EEEEEE;
+    text-decoration: none;
+}
+
+.logo img{
+    width: 55px;
+    height: 55px;
+    margin-right: 10px;
+}
+
+.menu{
+    display: flex;
+    gap: 6vw;
+    margin: 10px;
+}
+
+.menu a{
+    font-family: Ubuntu;
+    font-size: 20px;
+    color: #EEEEEE;
+    text-decoration: none;
+}
+
+.current{
+    color: #003C43 !important;
+    font-weight: bolder;
+}
+
+.menu a:hover{
+    text-shadow: 3px 3px 5px #003C43;
+}
+
+.jumbatron{
+    position: relative;
+    text-align: center;
+    font-family: Ubuntu;
+    color: #EEEEEE;
+}
+
+.jumbatron img{
+    width: 100%;
+    height: 895px;
+    filter: blur(1px);
+    opacity: 0.45;
+    object-fit: cover;
+}
+
+.above-jumbatron{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.above-jumbatron h1{
+    font-size: 6vw;
+    width: 100vw;
+}
+
+.above-jumbatron p{
+    font-size: 3vw;
+}
+
+.above-jumbatron button{
+    width: 20%;
+    font-size: 3vw;
+    font-weight: bolder;
+    color: #EEEEEE;
+    background-color: transparent;
+    border-color: #EEEEEE;
+    border-radius: 5px;
+    border-width: 3px;
+    cursor: pointer;
+}
+
+.above-jumbatron button:hover{
+    box-shadow: #EEEEEE;
+}
+
+.showroom-carousel{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carousel-title{
+    background-color: #31363F;
+    border-bottom: 3px solid#76ABAE;
+    width: 96%;
+    height: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 16px 0px 13px 0px;
+    color: #EEEEEE;
+    font-weight: bolder;
+    font-family: Ubuntu;
+    font-size: 3vw;
+}
+
+.carousel-view{
+    background-color: #31363F;
+    border-radius: 25px;
+    width: 96%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.prev-btn, .next-btn{
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+    color: #EEEEEE;
+    font-size: 40px;
+}
+
+.item-list{
+    width: 96%;
+    display: flex;
+    scroll-behavior: smooth;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.item-list::-webkit-scrollbar{
+    display: none;
+}
+
+.item-list img{
+    width: 70%; 
+    height: 241px;
+    margin: 0px 8px 0px 8px;
+    object-fit: cover;
+}
+
+.item{
+    scroll-snap-align: center;
+}
+
+.gallery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery-title{
+    color: #EEEEEE;
+    border-bottom: 3px solid#76ABAE;
+    font-family: Ubuntu;
+    font-size: 3vw;
+    font-weight: bolder;
+    height: 5vw;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 16px auto 10px auto;
+}
+
+.gallery-pic{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-pic1, .gallery-pic2{
+    display: flex;
+    flex-direction: row;
+    width: 96%;
+}
+
+.gallery-pic1 img, .gallery-pic2 img{
+    margin: 0px 16px 16px 0px;
+}
+
+.big-pic{
+    width: 50%;
+}
+
+.big-pic img{
+    width: 97%;
+    height: 97%;
+    object-fit: cover;
+}
+
+.small-pic{
+    width: 25%;
+    height: 25%;
+}
+
+.small-pic img{
+    width: 94%;
+    object-fit: cover;
+}
+
+.footer{
+    background-color: #76ABAE;
+    width: 100%;
+    height: 180px;
+    text-align: center;
+    color: #EEEEEE;
+}
+
+.contact{
+    margin: 20px;
+}
+
+.contact p{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    margin: 15px;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+.all-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.all-info p{
+    font-family: 'Ubuntu Mono', monospace;
+    text-decoration: none;
+    font-weight: lighter;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+}
+
+.info img{
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .logo img, .logo h1{
+        display: none;
+    }
+    .upper-logo{
+        display: flex;
+        background-color: #222831;
+        height: 70px;
+        font-family: Aldrich;
+        font-size: 4vw;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .upper-logo a, .upper-logo h1{
+        color: #EEEEEE;
+        text-decoration: none;
+    }
+    .upper-logo img{
+        width: 50px;
+        height: 50px;
+    }
+    .menu{
+        position: absolute;
+        left: 10%;
+    }
+    .menu a{
+        font-size: 3vw;
+    }
+    .navbar{
+        height: 9vw;
+    }
+    .jumbatron img{
+        height: 500px;
+    }
+    .carousel-title, .carousel-view{
+        width: 96%;
+    }
+    .gallery{
+        margin: auto;
+    }
+    .gallery-pic1, .gallery-pic2{
+        flex-direction: column;
+        align-items: center;
+    }
+    .big-pic{
+        width: 96%;
+    }
+    .small-pic{
+        display: flex;
+        flex-direction: row;
+        width: 48.5%;
+        justify-content: center;
+    }
+    .all-info{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer{
+        height: 320px;
+    }
+}

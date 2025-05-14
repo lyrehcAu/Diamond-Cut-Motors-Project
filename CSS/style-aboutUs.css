@@ -1,0 +1,260 @@
+@font-face {
+    src: url('../Assets/Fonts/Aldrich-Regular.ttf');
+    font-family: 'Aldrich';    
+}
+
+@font-face {
+    src: url('../Assets/Fonts/Jaini-Regular.ttf');
+    font-family: 'Jaini';
+}
+
+@font-face {
+    src: url('../Assets/Fonts/Ubuntu-Regular.ttf');
+    font-family: 'Ubuntu';
+}
+
+@font-face {
+    src: url('../Assets/Fonts/UbuntuMono-Regular.ttf');
+    font-family: 'Ubuntu Mono';
+}
+
+body{
+    background-color: #222831;
+    margin: 0;
+}
+
+.header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.upper-logo{
+    display: none;
+}
+
+.navbar{
+    background-color: #76ABAE;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+}
+
+.logo{
+    color: #EEEEEE;
+    font-family: Aldrich;
+    font-size: 1.8vw;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.logo a, h1{
+    color: #EEEEEE;
+    text-decoration: none;
+}
+
+.logo img{
+    width: 55px;
+    height: 55px;
+    margin-right: 10px;
+}
+
+.menu{
+    display: flex;
+    gap: 6vw;
+    margin: 10px;
+}
+
+.menu a{
+    font-family: Ubuntu;
+    font-size: 20px;
+    color: #EEEEEE;
+    text-decoration: none;
+}
+
+.current{
+    color: #003C43 !important;
+    font-weight: bolder;
+}
+
+.menu a:hover{
+    text-shadow: 3px 3px 5px #003C43;
+}
+
+.all-about {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin: 16px;
+    font-family: Ubuntu;
+    font-size: 23px;
+    color: #EEEEEE;
+}
+
+.title {
+    border-bottom: 3px solid #76ABAE;
+    height: 75px;
+    width: 100%;
+    max-width: 200px;
+}
+
+.history {
+    border: 3px solid #76ABAE;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    width: 45%;
+    height: auto;
+    margin-top: 16px;
+}
+
+.vision, .mission {
+    border: 3px solid #76ABAE;
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    margin: 16px;
+}
+
+.vision-mission {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.social-media{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.social-media h1{
+    color: #EEEEEE;
+    font-family: 'Ubuntu', sans-serif;
+    border-bottom: 3px solid #76ABAE;
+    height: 45px;
+    width: 250px;
+}
+
+.link-social img{
+    width: 40px;
+    height: 40px;
+    margin: 0 20px 0 0;
+}
+
+.footer{
+    background-color: #76ABAE;
+    width: 100%;
+    height: 180px;
+    text-align: center;
+    color: #EEEEEE;
+}
+
+.contact{
+    margin: 20px;
+}
+
+.contact p{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    margin: 15px;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+.all-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.all-info p{
+    font-family: 'Ubuntu Mono', monospace;
+    text-decoration: none;
+    font-weight: lighter;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+}
+
+.info img{
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .logo img, .logo h1{
+        display: none;
+    }
+    .upper-logo{
+        display: flex;
+        background-color: #222831;
+        height: 70px;
+        font-family: Aldrich;
+        font-size: 4vw;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .upper-logo a, .upper-logo h1{
+        color: #EEEEEE;
+        text-decoration: none;
+    }
+    .upper-logo img{
+        width: 50px;
+        height: 50px;
+    }
+    .menu{
+        position: absolute;
+        left: 10%;
+    }
+    .menu a{
+        font-size: 3vw;
+    }
+    .navbar{
+        height: 9vw;
+    }
+    .history{
+        margin: 16px;
+        width: 90%;
+        height: auto;
+    }
+    .vision, .mission{
+        width: 180%;
+    }
+    .all-about{
+        flex-direction: column;
+        align-items: center;
+    }
+    .all-info{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .vision-mission{
+        align-items: center;
+    }
+    .footer{
+        height: 320px;
+    }
+}

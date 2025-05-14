@@ -1,0 +1,361 @@
+@font-face {
+    src: url('../Assets/Fonts/Aldrich-Regular.ttf');
+    font-family: 'Aldrich';    
+}
+
+@font-face {
+    src: url('../Assets/Fonts/Jaini-Regular.ttf');
+    font-family: 'Jaini';
+}
+
+@font-face {
+    src: url('../Assets/Fonts/Ubuntu-Regular.ttf');
+    font-family: 'Ubuntu';
+}
+
+@font-face {
+    src: url('../Assets/Fonts/UbuntuMono-Regular.ttf');
+    font-family: 'Ubuntu Mono';
+}
+
+body{
+    background-color: #222831;
+    margin: 0;
+}
+
+.header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.upper-logo{
+    display: none;
+}
+
+.navbar{
+    background-color: #76ABAE;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+}
+
+.logo{
+    color: #EEEEEE;
+    font-family: Aldrich;
+    font-size: 1.8vw;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.logo a, h1{
+    color: #EEEEEE;
+    text-decoration: none;
+}
+
+.logo img{
+    width: 55px;
+    height: 55px;
+    margin-right: 10px;
+}
+
+.menu{
+    display: flex;
+    gap: 6vw;
+    margin: 10px;
+}
+
+.menu a{
+    font-family: Ubuntu;
+    font-size: 20px;
+    color: #EEEEEE;
+    text-decoration: none;
+}
+
+.current{
+    color: #003C43 !important;
+    font-weight: bolder;
+}
+
+.menu a:hover{
+    text-shadow: 3px 3px 5px #003C43;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0px;
+}
+
+.leftSide{
+    background-color: #76ABAE;
+    color: #EEEEEE;
+    font-family: Aldrich;
+    font-size: 25px;
+    width: 45%;
+    height: 662px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.loginLogo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loginLogo img{
+    width: 325px;
+    height: 325px;
+}
+
+.rightSide{
+    background-color: #EEEEEE;
+    width: 45%;
+    height: 662px;
+    font-family: Ubuntu mono;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titleLogin{
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 6px;
+    margin-top: 5px;
+}
+
+.account{
+    color: #A8A8A8;
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 6px;
+}
+
+.signUp{
+    color: #76ABAE;
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 6px;
+}
+
+.signingUp{
+    display: flex;
+    flex-direction: row;
+}
+
+#reserve-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form input{
+    border: 3px solid #31363F;
+    width: 30vw;
+    height: 3vw;
+    border-radius: 45px;
+    margin-bottom: 25px;
+    font-family: Ubuntu mono;
+    padding-left: 50px;
+    font-size: 1.9vw;
+    padding-right: 25px;
+}
+
+#name, #email, #phoneNumber, #password, #confPassword{
+    background-size: 2vw 2vw;
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-position: 2%;
+}
+
+#name{
+    background-image: url(../Assets/Photos/Icon/user.png);
+}
+
+#email{
+    background-image: url(../Assets/Photos/Icon/email.png);
+}
+
+#phoneNumber{
+    background-image: url(../Assets/Photos/Icon/Phone\ Number.png);
+}
+
+#password{
+    background-image: url(../Assets/Photos/Icon/padlock.png);
+}
+
+#confPassword{
+    background-image: url(../Assets/Photos/Icon/key.png);
+}
+
+::placeholder{
+    color: #A8A8A8;
+    font-size: 1.9vw;
+    font-style: italic;
+}
+
+.buttons button{
+    width: 10vw;
+    height: 44px;
+    border-radius: 45px;
+    background-color: #76ABAE;
+    border: none;
+    color: #EEEEEE;
+    font-family: Ubuntu mono;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.footer{
+    background-color: #76ABAE;
+    width: 100%;
+    height: 180px;
+    text-align: center;
+    color: #EEEEEE;
+}
+
+.contact{
+    margin: 20px;
+}
+
+.contact p{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    margin: 15px;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+.all-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.all-info p{
+    font-family: Ubuntu Mono;
+    text-decoration: none;
+    font-weight: lighter;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+}
+
+.info img{
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .logo img, .logo h1{
+        display: none;
+    }
+    .upper-logo{
+        display: flex;
+        background-color: #222831;
+        height: 70px;
+        font-family: Aldrich;
+        font-size: 4vw;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .upper-logo a, .upper-logo h1{
+        color: #EEEEEE;
+        text-decoration: none;
+    }
+    .upper-logo img{
+        width: 50px;
+        height: 50px;
+    }
+    .menu{
+        position: absolute;
+        left: 10%;
+    }
+    .menu a{
+        font-size: 3vw;
+    }
+    .navbar{
+        height: 9vw;
+    }
+    .loginLogo{
+        display: none;
+    }
+    .signingUp{
+        flex-direction: column;
+        align-items: center;
+    }
+    .account{
+        font-size: 15px;
+    }
+    .signUp{
+        font-size: 15px;
+    }
+    .leftSide{
+        width: 95%;
+        height: 270px;
+        font-size: 15px;
+        position: relative;
+    }
+    .rightSide{
+        position: absolute;
+        width: 55%;
+        height: 326px;
+    }
+    .form input{
+        border: 2px solid #31363F;
+        width: 150px;
+        height: 25px;
+        margin-bottom: 13px;
+        padding-left: 25px;
+        font-size: 15px;
+    }
+    #name, #email, #phoneNumber, #password, #confPassword{
+        background-size: 15px 15px;
+        background-repeat: no-repeat;
+        background-position: center left;
+        background-position: 2%;
+    }
+    ::placeholder{
+        color: #A8A8A8;
+        font-size: 15px;
+        font-style: italic;
+    }
+    .titleLogin{
+        font-size: 30px;
+    }
+    .loginLogo img{
+        width: 225px;
+        height: 225px;
+    }
+    .buttons button{
+        height: 25px;
+        width: 70px;
+        font-size: 15px;
+    }
+    .all-info{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer{
+        height: 305px;
+    }
+}

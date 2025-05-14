@@ -1,0 +1,471 @@
+@font-face {
+    src: url('../Assets/Fonts/Aldrich-Regular.ttf');
+    font-family: 'Aldrich';    
+}
+
+@font-face {
+    src: url('../Assets/Fonts/Jaini-Regular.ttf');
+    font-family: 'Jaini';
+}
+
+@font-face {
+    src: url('../Assets/Fonts/Ubuntu-Regular.ttf');
+    font-family: 'Ubuntu';
+}
+
+@font-face {
+    src: url('../Assets/Fonts/UbuntuMono-Regular.ttf');
+    font-family: 'Ubuntu Mono';
+}
+
+body{
+    background-color: #222831;
+    margin: 0;
+}
+
+.header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.upper-logo{
+    display: none;
+}
+
+.navbar{
+    background-color: #76ABAE;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+}
+
+.logo{
+    color: #EEEEEE;
+    font-family: Aldrich;
+    font-size: 1.8vw;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.logo a, h1{
+    color: #EEEEEE;
+    text-decoration: none;
+}
+
+.logo img{
+    width: 55px;
+    height: 55px;
+    margin-right: 10px;
+}
+
+.menu{
+    display: flex;
+    gap: 6vw;
+    margin: 10px;
+}
+
+.menu a{
+    font-family: Ubuntu;
+    font-size: 20px;
+    color: #EEEEEE;
+    text-decoration: none;
+}
+
+.current{
+    color: #003C43 !important;
+    font-weight: bolder;
+}
+
+.menu a:hover{
+    text-shadow: 3px 3px 5px #003C43;
+}
+
+.tagline{
+    position: relative;
+    text-align: center;
+}
+
+.tagline img{
+    width: 100%;
+    height: 598px;
+    filter: blur(1px);
+    opacity: 0.45;
+    object-fit: cover;
+}
+
+.tagline h1{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-family: Jaini;
+    font-size: 100px;
+    opacity: 0.8;
+}
+
+.tag1{
+    top: 15%;
+    left: 15%;
+}
+
+.tag2{
+    top: 40%;
+    left: 45%;
+}
+
+.tag3{
+    top: 65%;
+    left: 80%;
+}
+
+.topTier{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    font-family: Ubuntu;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: #EEEEEE;
+    width: 96%;
+    height: 49px;
+    background-color: #31363F;
+    border-bottom: 3px solid #76ABAE;
+    margin: 34px 0px 12px 0px;
+}
+
+.title p{
+    padding-top: 6px;
+    margin: 0px;
+}
+
+.showBox, .showMoreBox{
+    background-color: #31363F;
+    width: 96%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 19px 0px 15px 0px;
+}
+
+.showBox{
+    border-radius: 25px 25px 0px 0px;
+}
+
+.showMoreBox{
+    display: none;
+}
+
+.topPic img{
+    width: 90%;
+    height: 241px;
+    object-fit: contain;
+}
+
+.topPic p{
+    color: #EEEEEE;
+    font-family: Ubuntu mono;
+    font-size: 25px;
+    width: 90%;
+    text-align: center;
+    margin: 5px;
+}
+
+.moreOrLess{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 3px solid#76ABAE;
+    border-radius: 0px 0px 25px 25px;
+    background-color: #31363F;
+    height: 50px;
+    width: 96%;
+}
+
+.showMore, .showLess{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.showMore img, .showLess img{
+    width: 41px;
+    height: 41px;
+}
+
+.showLess img{
+    transform: rotate(180deg);
+}
+
+.showLess{
+    display: none;
+}
+
+.slider{
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+}
+
+.title{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.featuredSlider{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.5s ease-in-out;
+}
+
+.sliderItem{
+    min-width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    display: block;
+}
+
+.featured{
+    width: 96%;
+    height: 770px;
+    object-fit: cover;
+    border-radius: 25px;
+    margin-right: auto;
+}
+
+.sliderInfos{
+    color: #EEEEEE;
+    font-family: Ubuntu mono;
+    background-color: rgba(49, 54, 63, 0.5);
+    width: 96%;
+    height: 40%;
+    backdrop-filter: blur(3px);
+    border-radius: 0px 0px 25px 25px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.sliderInfos h1{
+    font-size: 45px;
+    margin: 20px;
+    text-align: center;
+}
+
+.price h2{
+    margin-top: 20px;
+    width: 96%;
+    text-align: center;
+}
+
+.sliderInfos p{
+    font-size: 33px;
+    margin: 10px;
+    text-align: center;
+}
+
+.price{
+    border-top: 3px solid #EEEEEE;
+    font-size: 25px;
+}
+
+.slider button{
+    background-color: transparent;
+    color: #EEEEEE;
+    border: none;
+}
+
+.prevNext{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.prevNext button{
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+    color: #EEEEEE;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.prev{
+    left: 4%;
+}
+
+.next{
+    right: 0.5%;
+}
+
+.navDots{
+    text-align: center;
+}
+
+.navDots .dot{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.navDots .dot.active{
+    background-color: #717171;
+}
+
+
+.footer{
+    background-color: #76ABAE;
+    width: 100%;
+    height: 180px;
+    text-align: center;
+    color: #EEEEEE;
+}
+
+.contact{
+    margin: 20px;
+}
+
+.contact p{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    margin: 15px;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+.all-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.all-info p{
+    font-family: Ubuntu Mono;
+    text-decoration: none;
+    font-weight: lighter;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+}
+
+.info img{
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .logo img, .logo h1{
+        display: none;
+    }
+    .upper-logo{
+        display: flex;
+        background-color: #222831;
+        height: 70px;
+        font-family: Aldrich;
+        font-size: 4vw;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .upper-logo a, .upper-logo h1{
+        color: #EEEEEE;
+        text-decoration: none;
+    }
+    .upper-logo img{
+        width: 50px;
+        height: 50px;
+    }
+    .menu{
+        position: absolute;
+        left: 10%;
+    }
+    .menu a{
+        font-size: 3vw;
+    }
+    .navbar{
+        height: 9vw;
+    }
+    .tagline h1{
+        font-size: 10vw;
+    }
+    .title{
+        font-size: 25px;
+    }
+    .showBox, .showMoreBox{
+        flex-wrap: wrap;
+    }
+    .showMoreBox{
+        display: none;
+    }
+    .topPic{
+        width: calc(50% - 10px);
+        text-align: center;
+    }
+    .topPic img{
+        height: auto;
+        object-fit: cover;
+    }
+    .topPic p{
+        color: #EEEEEE;
+        font-family: Ubuntu mono;
+        font-size: 20px;
+        text-align: center;
+        margin: 5px 0;
+    }
+    .featured{
+        height: 440px;
+        object-fit: cover;
+    }
+    .sliderInfos{
+        height: 200px;
+    }
+    .sliderInfos h1{
+        font-size: 25px;
+        margin-bottom: 0px;
+        margin-top: 10px;
+    }
+    .sliderInfos p{
+        font-size: 20px;
+    }
+    .price h2{
+        margin-top: 5px;
+        font-size: 23px;
+        text-align: center;
+    }
+    .prevNext button{
+        font-size: 35px;
+    }
+    .all-info{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .info{
+        width: 94%;
+    }
+    .footer{
+        height: 320px;
+    }
+}
